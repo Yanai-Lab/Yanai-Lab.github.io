@@ -1,1 +1,0 @@
-# Yanai-Lab.github.io
