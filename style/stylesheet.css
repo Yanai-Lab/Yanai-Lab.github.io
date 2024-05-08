@@ -9,11 +9,21 @@ main {
     margin: 10px auto;
 }
 
-#logo-and-message {
-    display: flex;
+main div {
+    padding: 10px;
 }
 
-#message {
+main li {
+    list-style: none;
+}
+
+#logo-and-labname {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#labname {
     margin: auto 10px;
 }
 
@@ -22,10 +32,3 @@ main {
     margin: 10px;
 }
 
-#member-introduction {
-    padding: 20px;
-}
-
-#member-list {
-    list-style: none;
-}
