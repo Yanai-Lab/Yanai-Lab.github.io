@@ -1,0 +1,22 @@
+/* stylesheet.css for index.html */
+
+#logo-and-message {
+    display: flex;
+}
+
+#message {
+    margin: auto 10px;
+}
+
+#yanailab_logo {
+    width: 100px;
+    margin: 10px;
+}
+
+#member-introduction {
+    padding: 20px;
+}
+
+#member-list {
+    list-style: none;
+}
