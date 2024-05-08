@@ -1,5 +1,14 @@
 /* stylesheet.css for index.html */
 
+body {
+    margin: 0;
+}
+
+main {
+    width: 50%;
+    margin: 10px auto;
+}
+
 #logo-and-message {
     display: flex;
 }
