@@ -1,9 +1,53 @@
 /* stylesheet.css for index.html */
 
+/* body */
+
 body {
     margin: 0;
     background-color: #d6d6d6;
 }
+
+/* Fade Up */
+
+.box {
+    opacity: 0;
+}
+
+.FadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.delay-time01 {
+    animation-delay: 0.1s;
+}
+
+.delay-time02 {
+    animation-delay: 0.2s;
+}
+
+.delay-time03 {
+    animation-delay: 0.3s;
+}
+
+.delay-time04 {
+    animation-delay: 0.4s;
+}
+
+/* main */
 
 main {
     width: 50%;
@@ -17,6 +61,8 @@ main div {
 main li {
     list-style: none;
 }
+
+/* logo and name of lab */
 
 #logo-and-labname {
     display: flex;
@@ -32,6 +78,8 @@ main li {
     width: 100px;
     margin: 10px;
 }
+
+/* contents */
 
 #cmdstanr {
     color: #000;
