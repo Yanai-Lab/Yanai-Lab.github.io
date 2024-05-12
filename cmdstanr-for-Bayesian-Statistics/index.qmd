@@ -12,3 +12,5 @@ lang: ja
 yy研究室5期生による，ベイズ統計学のための`{cmdstanr}`サポートページです．
 
 猫．犬. モルモット.
+
+[Yanai-Labのページ](https://yanai-lab.github.io/){.external target="_blank"}
