@@ -50,16 +50,26 @@ body {
 /* main */
 
 main {
-    width: 50%;
+    width: 100%;
     margin: 10px auto;
 }
 
 main div {
+    margin: 10px;
     padding: 10px;
 }
 
 main li {
     list-style: none;
+}
+
+#row {
+    display: flex;
+    justify-content: center;
+}
+
+#row div {
+    width: 40%;
 }
 
 /* logo and name of lab */
