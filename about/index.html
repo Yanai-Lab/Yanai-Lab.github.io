@@ -1,76 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="w-full h-dvh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/stylesheet.css">
-    <link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
-    <title>Yanai Lab</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/dist.css">
+    <title>Yanai Lab - About</title>
 </head>
-<body>
-    <main>
-        <div id="logo-and-labname">
-            <img src="style/img/yanailab_logo.png" alt="" id="yanailab_logo">
-            <h1 id="labname">QPE Laboratory</h1>
+<body class="w-full h-full">
+    <div class="w-full h-full bg-gradient-to-r from-slate-500 to-white flex items-center">
+        <div class="box FadeUp bg-white h-fit w-[1200px] shadow-xl ring-1 ring-gray-900/5
+                mx-auto rounded-lg grid grid-cols-2 px-24 py-12">
+                <div class="box FadeUp delay-time01 pb-24">
+                    <h2 class="text-2xl font-bold pb-2">活動内容</h2>
+                    <ul class="space-y-2 text-lg px-8">
+                        <li>週1回の授業</li>
+                        <li>月1回の勉強会</li>
+                        <li>データ分析</li>
+                        <li>ベイズ統計学</li>
+                    </ul>
+                </div>
+                <div class="box FadeUp delay-time02 pb-24">
+                    <h2 class="text-2xl font-bold pb-2">メンバー紹介</h2>
+                    <ul class="space-y-2 text-lg px-8">
+                        <li>指導教員: 矢内 勇生(yuki yanai)</li>
+                        <li>&nbsp; 伊庭 孝典(kousuke iba)</li>
+                        <li>&nbsp; 中野 佳介(keisuke nakano)</li>
+                        <li>&nbsp; 野村 和矢(kazuya nomura)</li>
+                        <li>&nbsp; 生田 結萌(yume ikuta)</li>
+                        <li>&nbsp; </li>
+                        <li>&nbsp; </li>
+                    </ul>
+                </div>
+                <div class="box FadeUp delay-time03 pb-16">
+                    <h2 class="text-2xl font-bold pb-2">受賞履歴</h2>
+                    <ul class="space-y-2 text-lg px-8">
+                        <li>2022年: 統計コンペティション参加賞</li>
+                        <li>2023年: 統計コンペティション参加賞</li>
+                        <li>2024年:</li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="box FadeUp delay-time04 pb-16">
+                    <h2 class="text-2xl font-bold pb-2">コンテンツ</h2>
+                    <ul class="space-y-2 text-lg px-8">
+                        <li><a href="../cmdstanr-for-Bayesian-Statistics/docs/index.html"
+                                    class="text-[#458ef7] hover:text-blue-600">
+                                    {cmdstanr}サポートページ &rarr;</a></li>
+                    </ul>
+                </div>
+                <p class="box FadeUp delay-time05"><a href="../index.html" class="text-[#458ef7] hover:text-blue-500">&larr; 戻る</a></p>
         </div>
-        <div id="row">
-            <div id="lab-introduction" class="box FadeUp">
-                <h2>研究室紹介</h2>
-                <p>計量政治経済研究室です．</p>
-                <p>統計的手法を用いて，政治学や経済学の研究しています．</p>
-            </div>
-            <div id="activity" class="box FadeUp delay-time01">
-                <h2>活動内容</h2>
-                <ul>
-                    <li>データ分析</li>
-                    <li>ベイズ統計学</li>
-                    <li>シミュレーション</li>
-                    <li>カルロフ連鎖モンテカルロ法</li>
-                </ul>
-            </div>
-        </div>
-        <div id="row">
-            <div id="member-introduction" class="box FadeUp delay-time02">
-                <h2>メンバー紹介</h2>
-                <p>指導教員: yuki yanai 矢内勇生</p>
-                <p>研究生:</p>
-                <ul id="member-list">
-                    <li>kousuke iba 伊庭 孝典</li>
-                    <li>keisuke nakano 中野 佳介</li>
-                    <li>kazuya nomura 野村 和矢</li>
-                    <li>yume ikuta 生田 結萌</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <div id="history" class="box FadeUp delay-time03">
-                <h2>受賞履歴</h2>
-                <ul>
-                    <li>2023年 : 統計コンペティション参加賞</li>
-                    <li>2024年 : がんばる</li>
-                    <li>2025年 : </li>
-                </ul>
-            </div>
-        </div>
-        <div id="row">
-            <div id="contents" class="box FadeUp delay-time04">
-                <h2>コンテンツ</h2>
-                <ul>
-                    <li>
-                        <a href="/cmdstanr-for-Bayesian-Statistics/docs/index.html"
-                            id="cmdstanr" target="_blank">
-                                {cmdstanr}サポートページ
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </li>
-                    <li></li>
-                </ul>
-            </div>
-            <div id="sample">
-            </div>
-        </div>
-    </main>
+    </div>
 </body>
 </html>
-
