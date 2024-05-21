@@ -1,76 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="w-full h-dvh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/stylesheet.css">
-    <link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
-    <title>Yanai Lab</title>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
 </head>
-<body>
-    <main>
-        <div id="logo-and-labname">
-            <img src="style/img/yanailab_logo.png" alt="" id="yanailab_logo">
-            <h1 id="labname">QPE Laboratory</h1>
-        </div>
-        <div id="row">
-            <div id="lab-introduction" class="box FadeUp">
-                <h2>研究室紹介</h2>
-                <p>計量政治経済研究室です．</p>
-                <p>統計的手法を用いて，政治学や経済学の研究しています．</p>
+<body class="w-full h-full">
+    <div class="w-full h-full bg-gradient-to-r from-slate-500 to-white flex items-center">
+        <div class="bg-white px-6 pt-10 pb-8 w-4/6 h-[600px] shadow-xl grid-rows-2
+                ring-1 ring-gray-900/5 sm:m-auto sm:max-w-lg sm:rounded-lg sm:px-10 mx-auto">
+            <div class="mx-auto max-d-md h-[25%]">
+                <div class="flex">
+                    <img src="style/img/yanailab_logo.png" alt="yanai-lab-logo" class="h-20 mr-4">
+                    <h1 class="text-2xl my-auto ml-0 font-bold">計量政治経済研究室</h1>
+                </div>
             </div>
-            <div id="activity" class="box FadeUp delay-time01">
-                <h2>活動内容</h2>
-                <ul>
-                    <li>データ分析</li>
-                    <li>ベイズ統計学</li>
-                    <li>シミュレーション</li>
-                    <li>カルロフ連鎖モンテカルロ法</li>
-                </ul>
-            </div>
-        </div>
-        <div id="row">
-            <div id="member-introduction" class="box FadeUp delay-time02">
-                <h2>メンバー紹介</h2>
-                <p>指導教員: yuki yanai 矢内勇生</p>
-                <p>研究生:</p>
-                <ul id="member-list">
-                    <li>kousuke iba 伊庭 孝典</li>
-                    <li>keisuke nakano 中野 佳介</li>
-                    <li>kazuya nomura 野村 和矢</li>
-                    <li>yume ikuta 生田 結萌</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <div id="history" class="box FadeUp delay-time03">
-                <h2>受賞履歴</h2>
-                <ul>
-                    <li>2023年 : 統計コンペティション参加賞</li>
-                    <li>2024年 : がんばる</li>
-                    <li>2025年 : </li>
-                </ul>
-            </div>
-        </div>
-        <div id="row">
-            <div id="contents" class="box FadeUp delay-time04">
-                <h2>コンテンツ</h2>
-                <ul>
-                    <li>
-                        <a href="/cmdstanr-for-Bayesian-Statistics/docs/index.html"
-                            id="cmdstanr" target="_blank">
-                                {cmdstanr}サポートページ
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </li>
-                    <li></li>
-                </ul>
-            </div>
-            <div id="sample">
+            <div class="divide-y divide-gray-300/50 h-[75%] my-0">
+                <div class="h-[85%] grid-rows-3 space-y-6">
+                    <i class="text-lg h-fit">ー あなたの疑問に，<span class="text-[#458ef7]">統計的</span>な答えを．</i>
+                    <p class="h-fit">&nbsp; 計量政治経済研究室では，統計学の理論・手法を用いて，政治学や経済学の研究をしています．</p>
+                    <ul class="space-y-4 h-fit">
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 flex-none fill-sky-100 stroke-[#458ef7] stroke-2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="11" />
+                                <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                            </svg>
+                            <p class="ml-4">
+                                数学に興味がある．
+                            </p>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 flex-none fill-sky-100 stroke-[#458ef7] stroke-2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="11" />
+                                <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                            </svg>
+                            <p class="ml-4">
+                                統計学を学びたい．
+                            </p>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 flex-none fill-sky-100 stroke-[#458ef7] stroke-2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="11" />
+                                <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
+                            </svg>
+                            <p class="ml-4">
+                                データに基づいた議論がしたい．
+                            </p>
+                        </li>
+                    </ul>
+                    <p>そんな人におすすめの研究室です．</p>
+                </div>
+                <div class="text-base font-semibold leading-7 divide-white h-[15%] flex items-center">
+                    <p class="text-gray-900">
+                        この研究室についてもっと知りたい方は
+                        <a href="#" class="text-[#458ef7] hover:text-blue-600">こちらへ &rarr;</a>
+                    </p>
+                </div>
             </div>
         </div>
-    </main>
+    </div>
 </body>
 </html>
-
