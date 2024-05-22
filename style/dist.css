@@ -559,44 +559,6 @@ video {
   --tw-contain-style: ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
-.m-auto {
-  margin: auto;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -627,12 +589,16 @@ video {
   display: grid;
 }
 
-.h-1\/4 {
-  height: 25%;
+.h-1\/6 {
+  height: 16.666667%;
 }
 
-.h-20 {
-  height: 5rem;
+.h-12 {
+  height: 3rem;
+}
+
+.h-5\/6 {
+  height: 83.333333%;
 }
 
 .h-6 {
@@ -645,10 +611,6 @@ video {
 
 .h-\[550px\] {
   height: 550px;
-}
-
-.h-\[75\%\] {
-  height: 75%;
 }
 
 .h-\[85\%\] {
@@ -668,20 +630,8 @@ video {
   height: 100%;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
-.h-1\/6 {
-  height: 16.666667%;
-}
-
-.h-5\/6 {
-  height: 83.333333%;
-}
-
-.w-4\/6 {
-  width: 66.666667%;
+.w-4\/5 {
+  width: 80%;
 }
 
 .w-6 {
@@ -784,6 +734,11 @@ video {
   padding: 2rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-24 {
   padding-left: 6rem;
   padding-right: 6rem;
@@ -797,11 +752,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .pb-2 {
@@ -895,33 +845,20 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:m-auto {
-    margin: auto;
+  .sm\:h-1\/4 {
+    height: 25%;
   }
 
   .sm\:h-20 {
     height: 5rem;
   }
 
-  .sm\:h-1\/4 {
-    height: 25%;
-  }
-
   .sm\:h-\[75\%\] {
     height: 75%;
   }
 
-  .sm\:max-w-lg {
-    max-width: 32rem;
-  }
-
-  .sm\:rounded-lg {
-    border-radius: 0.5rem;
-  }
-
-  .sm\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+  .sm\:w-4\/6 {
+    width: 66.666667%;
   }
 
   .sm\:text-2xl {
@@ -929,13 +866,13 @@ video {
     line-height: 2rem;
   }
 
-  .sm\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
