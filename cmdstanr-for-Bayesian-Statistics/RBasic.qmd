@@ -1,5 +1,5 @@
 ---
-title: '基本的な使い方'
+title: 'Rの基本操作'
 toc: true
 toc-title: '目次'
 toc-depth: 4

@@ -12,16 +12,14 @@ book:
     - index.qmd
     - part: ベイズ統計学とは
       chapters:
-        - chapter1.qmd
-    - part: Rについて
-      chapters: 
-        - chapter2.qmd
-    - part: Stanの書き方
-      chapters: 
-        - chapter3.qmd
+        - StatisticsBasic.qmd
+    - part: RとStanについて
+      chapters:
+        - RBasic.qmd
+        - StanBasic.qmd
     - part: 実践編
       chapters:
-        - chapter4.qmd
+        - Practice.qmd
   page-footer:
     center: 'Copyright 2024, YY Laboratory'
 
