@@ -110,5 +110,54 @@
     "title": "4  ベイズ統計をやってみよう",
     "section": "4.4 Bayesian Statistics!",
     "text": "4.4 Bayesian Statistics!"
+  },
+  {
+    "objectID": "StatisticsBasic.html#統計学とは",
+    "href": "StatisticsBasic.html#統計学とは",
+    "title": "1  統計学の基礎",
+    "section": "1.1 統計学とは",
+    "text": "1.1 統計学とは\n真実が知りたい学問．\n\n1.1.1 尤度とは\n尤もらしさ．\n\n\n1.1.2 サンプルサイズ\nいっぱいあればいいな．"
+  },
+  {
+    "objectID": "RBasic.html#rとは",
+    "href": "RBasic.html#rとは",
+    "title": "2  Rの基本操作",
+    "section": "2.1 Rとは?",
+    "text": "2.1 Rとは?\n結論\n\nRはともだち． — 私たちのR (js, yy)\n\n私たちのR参照．"
+  },
+  {
+    "objectID": "StanBasic.html#stan",
+    "href": "StanBasic.html#stan",
+    "title": "3  Stanの書き方",
+    "section": "3.1 Stan",
+    "text": "3.1 Stan\ndata, parameters, modelが大事．generated quantitiesはたまに使う．"
+  },
+  {
+    "objectID": "Practice.html#mcmc",
+    "href": "Practice.html#mcmc",
+    "title": "4  ベイズ統計をやってみよう",
+    "section": "4.1 MCMC!",
+    "text": "4.1 MCMC!\n\npacman::p_load(tidyverse,\n               cmdstanr,\n               posterior,\n               patchwork)\noptions(mc.cores = parallel::detectCores())"
+  },
+  {
+    "objectID": "Practice.html#trace-plot",
+    "href": "Practice.html#trace-plot",
+    "title": "4  ベイズ統計をやってみよう",
+    "section": "4.2 Trace Plot!",
+    "text": "4.2 Trace Plot!"
+  },
+  {
+    "objectID": "Practice.html#posterior-distribution",
+    "href": "Practice.html#posterior-distribution",
+    "title": "4  ベイズ統計をやってみよう",
+    "section": "4.3 Posterior Distribution!",
+    "text": "4.3 Posterior Distribution!"
+  },
+  {
+    "objectID": "Practice.html#bayesian-statistics",
+    "href": "Practice.html#bayesian-statistics",
+    "title": "4  ベイズ統計をやってみよう",
+    "section": "4.4 Bayesian Statistics!",
+    "text": "4.4 Bayesian Statistics!"
   }
 ]

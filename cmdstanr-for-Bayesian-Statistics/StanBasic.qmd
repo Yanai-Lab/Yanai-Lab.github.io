@@ -1,5 +1,5 @@
 ---
-title: 'Stanファイル'
+title: 'Stanの書き方'
 toc: true
 toc-title: '目次'
 toc-depth: 4
