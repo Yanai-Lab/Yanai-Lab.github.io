@@ -1,3 +1,4 @@
+/*
 "use client";
 
 import { useState } from "react";
@@ -17,7 +18,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Loader2 } from "lucide-react";
-// import toast from "react-hot-toast";
+import toast from "react-hot-toast";
 
 const schema = z.object({
   name: z.string().min(2, { message: "Name is required." }),
@@ -27,7 +28,7 @@ const schema = z.object({
 type InputType = z.infer<typeof schema>;
 
 const ContactForm = () => {
-  // const router = useRouter();
+  const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
 
   const form = useForm<InputType>({
@@ -38,7 +39,7 @@ const ContactForm = () => {
       message: "",
     },
   });
-{/*
+
   const onSubmit: SubmitHandler<InputType> = async (data) => {
     setIsLoading(true);
 
@@ -78,10 +79,10 @@ const ContactForm = () => {
       setIsLoading(false);
     };
   }
-*/}
+
   return (
     <Form {...form}>
-      <form /* onSubmit={form.handleSubmit(onSubmit)} */ className="space-y-6">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
         <FormField
           name="name"
           render={({ field }) => (
@@ -130,3 +131,4 @@ const ContactForm = () => {
 }
 
 export default ContactForm;
+*/

@@ -1,4 +1,4 @@
-import ContactForm from "@/components/contact";
+// import ContactForm from "@/components/contact";
 import {
   Accordion,
   AccordionContent,
@@ -10,7 +10,7 @@ const ContactPage = () => {
   return (
     <div className="11/12 mx-auto px-4 md:px-0 max-w-xl space-y-12">
       <div className="w-fit mx-auto pt-20 font-bold text-2xl md:text-3xl">Contact</div>
-      <ContactForm />
+      {/* <ContactForm /> */}
       <div className="w-full mx-auto pt-20 space-y-4">
         <div className="text-center font-bold text-xl md:text-2xl">
           FAQ
