@@ -77,6 +77,7 @@ const Landing = () => {
                   <Member
                     key={index}
                     name={member.name}
+                    nameRomaji={member.nameRomaji}
                     position={member.position}
                     image={member.image}
                     description={member.description}
@@ -99,6 +100,7 @@ const Landing = () => {
                       <div key={index} className="rounded-lg shadow-lg">
                         <Member
                           name={student.name}
+                          nameRomaji={student.nameRomaji}
                           position={student.position}
                           image={student.image}
                           description={student.description}
