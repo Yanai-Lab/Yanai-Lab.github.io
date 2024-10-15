@@ -7,6 +7,7 @@ import {
 
 interface MemberType {
   name: string,
+  nameRomaji: string,
   position: string,
   image: string,
   github: string,
@@ -15,6 +16,7 @@ interface MemberType {
 
 export default function Member({
   name,
+  nameRomaji,
   position,
   image,
   description,
@@ -30,9 +32,12 @@ export default function Member({
         className="rounded-full mx-auto"
       />
       <div className="flex space-x-2 mt-2">
-        <Badge variant="secondary">{position}</Badge>
+        <div className="">
+          <Badge variant="secondary">{position}</Badge>
+        </div>
         <div className="text-lg font-bold">
-          {name}
+          <p>{name}</p>
+          <p>({nameRomaji})</p>
         </div>
       </div>
       <div className="my-2">
