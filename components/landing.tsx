@@ -96,9 +96,8 @@ const Landing = () => {
                   <div className="font-bold">{year}年度卒業予定</div>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {studentsByYear[Number(year)]?.map((student, index) => (
-                      <div className="rounded-lg shadow-lg">
+                      <div key={index} className="rounded-lg shadow-lg">
                         <Member
-                          key={index}
                           name={student.name}
                           position={student.position}
                           image={student.image}
