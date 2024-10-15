@@ -18,7 +18,7 @@ export const members = [
 
   {
     name: "中野佳介 (keisuke nakano)",
-    position: "学士",
+    position: "学部生",
     image: "keisukenakano.png",
     description: "ジャム理論に基づき、実験データでベイズ統計分析を行う",
     github: "Honoka-Nakano",
