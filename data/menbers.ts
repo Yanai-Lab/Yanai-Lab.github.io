@@ -1,6 +1,6 @@
 export const members = [
   {
-    name: "矢内勇生",
+    name: "矢内勇生 (yuki yanai)",
     position: "准教授",
     image: "yukiyanai.jpeg",
     description: "計量政治学の研究と教育",
@@ -17,7 +17,7 @@ export const members = [
   */
 
   {
-    name: "中野佳介",
+    name: "中野佳介 (keisuke nakano)",
     position: "学士",
     image: "keisukenakano.png",
     description: "ジャム理論に基づき、実験データでベイズ統計分析を行う",
