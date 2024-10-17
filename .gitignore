@@ -34,3 +34,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# R Studio
+.Rhistory
+.RData
+.Rproj
+.Rproj.user
+.Rprofile
+.Rbuildignore
