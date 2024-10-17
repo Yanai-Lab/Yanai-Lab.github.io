@@ -57,6 +57,7 @@ $ git remote add upstream git@github.com:Yanai-Lab/Yanai-Lab.github.io.git
 
 ```
 $ git switch main
+$ git fetch
 $ git merge upstream/main
 ```
 
