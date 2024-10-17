@@ -10,9 +10,7 @@
 
 **署名の手順**
 
-まず，このリポジトリの管理者から`read`の権限を付与してもらいます．
-
-その後，このリポジトリをフォークします．すると，自分のアカウント下に`Yanai-Lab.github.io`が作成されるので，そのリポジトリをローカルへクローンします．
+まず，このリポジトリをフォーク（Fork）します．すると，自分のアカウント下に`Yanai-Lab.github.io`が作成されるので，そのリポジトリ（`<YourUserName>/Yanai-Lab.github.io`）をローカルへクローン（`git clone`）します．
 
 クローンしたリポジトリへ移動すると，`data`というディレクトリが存在します．その中に`members.ts`ファイルがあり，そこに`members`という配列が定義されているので，配列の要素として辞書形式でご自身の情報を記載してください．
 
@@ -20,14 +18,14 @@
 - `name`: 名前
 - `nameRomaji`: ローマ字表記の名前
 - `position`: 役職
-- `image`: アイコンのファイル名(`/public/imgs/icons/`へ保存しておく)
+- `image`: アイコンのファイル名
 - `description`: 紹介
 - `github`: GitHubのユーザ名
 - `graduationYear`: 卒業予定年度
 
-ただし，アイコンは`public/imgs/icons/`へ保存しておく必要があります．保存したファイル名を，**拡張子を忘ずに**`image`へ指定します．
+ただし，アイコンは`public/imgs/icons/`へ保存しておく必要があります（PNG, JPEG推奨）．保存したファイル名を，**拡張子を忘ずに**`image`へ指定します．アイコンを設定したくない，あるいは設定する必要がない方は`default.png`としてください．
 
-変更後，新規ブランチを作成してからリモートへプッシュします．
+変更後，新規ブランチを作成してからリモートへプッシュします．ブランチ名（下記コードでの`<branchName>`）は任意です．`addMyInfo`といったブランチ名がわかりやすいでしょう．
 
 ```
 $ git branch <branchName>
@@ -36,6 +34,43 @@ $ git add data/members.ts
 $ git commit -m "added my information"
 $ git push origin <branchName>
 ```
+
+その後，GitHub上でプルリクエストを作成します．
+
+**フォークしたリポジトリとローカルを最新の状態に保つには**
+
+オリジナルのリポジトリ（`Yanai-Lab/Yanai-Lab.github.io.git`）が更新された時，フォークしたリポジトリ（`<YourUserName>/Yanai-Lab.github.io.git`）が自動的に最新の状態になることはありません．ローカルのリポジトリも同じく．
+
+フォークしたリポジトリとローカルのリポジトリを，オリジナルのリポジトリに合わせて手動で最新の状態にしておく必要があります．でなければ，コンフリクト等の問題が発生します．
+
+以下に手順を記します．
+
+まず，オリジナルのリポジトリ（`Yanai-Lab/Yanai-Lab.github.io.git`）をリモートリポジトリとしてローカルに追加する必要があります．
+
+```
+$ git remote add upstream git@github.com:Yanai-Lab/Yanai-Lab.github.io.git
+```
+
+このコマンドは`Yanai-Lab/Yanai-Lab.github.io.git`を`upstream`という名前のリモートリポジトリとしてローカルへ追加するものです．ちなみに，`origin`はフォークしたリポジトリ（`<YourUserName>/Yanai-Lab.github.io.git`）を指します．
+
+`upstream`は常に最新の状態なので，これをローカルの`main`ブランチに反映させます．
+
+```
+$ git switch main
+$ git fetch upstream
+```
+
+これでローカルの`main`ブランチが最新の状態となりました．
+
+続いて，フォークしたリポジトリ（`<YourUserName>/Yanai-Lab.github.io.git`）に，先ほど最新の状態とした`main`ブランチをプッシュ（`git push`）します．
+
+```
+$ git push origin main
+```
+
+これで，ローカルと`origin`が最新の状態となりました．
+
+<p align="right"><a href="#top">トップへ</a></p>
 
 ## 2. 開発者の方へ
 
@@ -65,7 +100,7 @@ $ git push origin <branchName>
 
 その他のパッケージのバージョンは`package.json`を参照してください．
 
-<p align="right">(<a href="#top">トップへ</a>)</p>
+<p align="right"><a href="#top">トップへ</a></p>
 
 ### 開発環境構築
 
@@ -81,7 +116,7 @@ $ brew install node
 $ node --version
 ```
 
-その後，このリポジトリをフォークし，フォークしたリポジトリをローカルへクローンします．作業ディレクトリで以下のコマンドを実行してください．
+その後，このリポジトリ（`Yanai-Lab/Yanai-Lab.github.io.git`）をフォーク（Fork）し，フォークしたリポジトリ（`<YourUserName>/Yanai-Lab.github.io.git`）をローカルへクローン（`git clone`）します．作業ディレクトリで以下のコマンドを実行してください．
 
 ```
 $ npm install
@@ -97,7 +132,7 @@ npm run dev
 
 [こちらのZenn記事](https://zenn.dev/kazzyfrog/articles/8e24dfe951aad9)を参考に，GitHub Pagesへデプロイします．
 
-<p align="right">(<a href="#top">トップへ</a>)</p>
+<p align="right"><a href="#top">トップへ</a></p>
 
 ### ディレクトリ構成
 
@@ -147,5 +182,5 @@ $ tree -a -I "node_modules|.next|.git" -L 2
 16 directories, 24 files
 ```
 
-<p align="right">(<a href="#top">トップへ</a>)</p>
+<p align="right"><a href="#top">トップへ</a></p>
 
