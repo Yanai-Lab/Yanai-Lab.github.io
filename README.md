@@ -57,7 +57,7 @@ $ git remote add upstream git@github.com:Yanai-Lab/Yanai-Lab.github.io.git
 
 ```
 $ git switch main
-$ git fetch upstream
+$ git merge upstream/main
 ```
 
 これでローカルの`main`ブランチが最新の状態となりました．
