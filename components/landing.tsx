@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Member from "@/components/member";
-import { members } from "@/data/menbers";
+import { members } from "@/data/members";
 import Link from "next/link";
 
 const Landing = () => {
