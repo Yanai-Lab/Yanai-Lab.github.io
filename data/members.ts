@@ -23,7 +23,7 @@ export const members = [
     nameRomaji: "keisuke nakano",
     position: "学部生",
     image: "keisukenakano.png",
-    description: "ジャム理論に基づき、実験データでベイズ統計分析を行う",
+    description: "ジャム理論に基づいた研究テーマを掲げ，実験データを用いたベイズ統計分析を行う．",
     github: "Honoka-Nakano",
     graduationYear: 2025,
   },
