@@ -51,7 +51,7 @@ $ git push origin <branchName>
 $ git remote add upstream git@github.com:Yanai-Lab/Yanai-Lab.github.io.git
 ```
 
-このコマンドは`Yanai-Lab/Yanai-Lab.github.io.git`を`upstream`という名前のリモートリポジトリとしてローカルへ追加するものです．ちなみに，`origin`はフォークしたリポジトリ（`<YourUserName>/Yanai-Lab.github.io.git`）を指します．
+このコマンドは`Yanai-Lab/Yanai-Lab.github.io.git`を`upstream`という名前のリモートリポジトリとしてローカルへ追加するものです．ちなみに，`<YourUserName>/Yanai-Lab.github.io.git`は`origin`という名前でローカルへ追加されています．
 
 `upstream`は常に最新の状態なので，これをローカルの`main`ブランチに反映させます．
 
@@ -103,7 +103,7 @@ $ git push origin main
 
 <p align="right"><a href="#top">トップへ</a></p>
 
-### 開発環境構築
+### 開発環境構築（Mac）
 
 開発にはNode.jsが必要です．次のコマンドでインストールしてください．
 
